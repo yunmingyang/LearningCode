@@ -7,7 +7,7 @@ import java.util.*;
  */
 public class AddingGroups {
     public static void main(String[] args) {
-        Collection<Integer> collection = new ArrayList<Integer>(Arrays.asList(1,2,3,4));
+        Collection<Integer> collection = new ArrayList<>(Arrays.asList(1,2,3,4));
         Integer[] moreInts={11,22,33,44};
         collection.addAll(Arrays.asList(moreInts));
         Collections.addAll(collection,12,13,14,15);

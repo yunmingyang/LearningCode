@@ -1,3 +1,5 @@
+package algorithm;
+
 public class InsertSort {
     public static void InsertSort(int[] arr){
         int temp = 0;

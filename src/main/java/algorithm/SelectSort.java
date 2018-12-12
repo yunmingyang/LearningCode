@@ -1,3 +1,6 @@
+package algorithm;
+
+
 public class SelectSort {
     public static void SelectSort(int[] arr){
         int min = 0;

@@ -1,42 +1,45 @@
 public class TestArr {
-    public int add(int a,int b){
-        return a+b;
-    }
-    public static void main(String[] args){
-        int a[] = new int[5];
-        int temp = 10;
-        for(int i=0;i<5;i++){
-            a[i] = temp;
-            System.out.printf("a[%d] is %d\n",i,a[i]);
-            temp += 10;
-        }
-
-
-
-        int[][] arr = new int[3][4];
-        int temp_1 = 1;
-        for(int i = 0;i < 3;i++){
-            for (int l = 0;l < 4;l++){
-                arr[i][l] = temp_1;
-                temp_1 += 1;
-                System.out.printf("a[%d][%d] is %d\n",i,l,arr[i][l]);
+    void SelectMax(double[] mArr){
+        for(int i = 0;i < 10;i++){
+            int max = (int)mArr[i];
+            if( i != 0){
+                if(max < mArr[i]){
+                    max = (int)mArr[i];
+                }
             }
+            System.out.println("max is :" + max);
         }
+    }
+
+    double[] InitArr(double[] mArr){
+        for(int i=0;i<10;i++) {
+            mArr[i] = i * 10;
+            //System.out.println(mArr[i]);
+        }
+        return mArr;
+    }
+
+    void PrintArr(double[] mArr){
+        for(int i =0;i < mArr.length;i++){
+            System.out.println(mArr[i]);
+        }
+    }
+
+    public static void main(String[] args){
+        double[] mArr = new double[10];
+        System.out.println(mArr[1]);
+        TestArr Ta = new TestArr();
+        double[] mDarr = Ta.InitArr(mArr);
+        Ta.PrintArr(mDarr);
+        Ta.PrintArr(mArr);
+        Ta.SelectMax(mArr);
 
 
 
-        Class c = arr.getClass();
-        String name = c.getName();
-        System.out.printf("%s",name);
+        double[] mList = {1,2,2,3,4,5,6};
 
-
-
-        char[] copyFrom = {'d','e','c','a','f','f','e','i','n','a','t','e','d'};
-        char[] copyTo = new char[7];
-
-
-        System.arraycopy(copyFrom,2,copyTo,0,7);
-
-        System.out.println(copyTo);
+        for(double e : mList){
+            System.out.println(e);
+        }
     }
 }

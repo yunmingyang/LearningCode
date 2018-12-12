@@ -1,3 +1,5 @@
+package algorithm;
+
 public class MergeSort {
     public static void mergeSort(int[] arr){
         sort(arr,0,arr.length-1);//此处减一是为了配合下标

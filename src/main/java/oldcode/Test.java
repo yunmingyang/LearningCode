@@ -1,10 +1,26 @@
-import java.util.regex.Pattern;
-
 public class Test {
     public static void main(String[] args){
-        Pattern pattern =Pattern.compile("^(-|\\+)?\\d*\\D");
-        System.out.println(pattern.matcher("-100a").matches());
-
-
+        new AA();
     }
+}
+class AA{
+    public static int i = 0;
+    public int a = print();
+    static {
+        System.out.println(i);
+    }
+     {
+        System.out.println("~~~~~~~~~~");
+    }
+//    {
+//        i = 1000;
+//        System.out.println(i);
+//    }
+    public int print(){
+        System.out.println("---------");
+        return 0;
+    }
+}
+class BB extends AA{
+
 }

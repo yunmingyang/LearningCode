@@ -1,3 +1,6 @@
+package algorithm;
+
+
 public class QuickSort {
     public static void main(String[] args) {
         int[] arr = {23,2,15,123,44,23,455};

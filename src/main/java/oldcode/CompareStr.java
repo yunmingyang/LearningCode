@@ -1,4 +1,4 @@
-package Str;
+package oldcode;
 
 public class CompareStr {
     public static void main(String[] args){

@@ -1,4 +1,4 @@
-package com.DT;
+package oldcode;
 
 public class TestPackMin {
 

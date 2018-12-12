@@ -1,4 +1,4 @@
-package OtherTest;
+package someofinteresting;
 
 public class TestCopy {
     public static void main(String[] args) {

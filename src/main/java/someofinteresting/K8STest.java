@@ -1,11 +1,4 @@
-package OtherTest;
-
-import io.fabric8.kubernetes.api.model.NamespaceList;
-import io.fabric8.kubernetes.client.DefaultKubernetesClient;
-import io.fabric8.kubernetes.client.KubernetesClient;
-
-import java.io.File;
-import java.io.FileInputStream;
+package someofinteresting;
 
 /**
  * Created by yangyunming on 2018/7/6

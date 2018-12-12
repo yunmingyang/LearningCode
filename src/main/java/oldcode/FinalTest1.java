@@ -1,4 +1,4 @@
-package com.finaltest;
+package oldcode;
 
 public class FinalTest1 extends FinalTest {
     public void test1(){

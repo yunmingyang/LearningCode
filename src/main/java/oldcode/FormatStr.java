@@ -1,4 +1,4 @@
-package Str;
+package oldcode;
 
 import java.util.Locale;
 

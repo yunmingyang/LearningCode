@@ -1,4 +1,4 @@
-package OtherTest;
+package someofinteresting;
 
 import java.util.LinkedList;
 

@@ -1,3 +1,6 @@
+package oldcode;
+
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
@@ -50,11 +53,11 @@ public class main {
 //        for(int i = 0;i < 10;i++)
 //            exec.execute(new LiftOff());
 //        exec.shutdown();
-        ExecutorService exec = Executors.newCachedThreadPool();
-        for(int i = 0;i < 5; i++) {
-            exec.execute(new SimplePriorities(Thread.MIN_PRIORITY));
-        }
-        exec.execute(new SimplePriorities(Thread.MAX_PRIORITY));
-        exec.shutdown();
+//        ExecutorService exec = Executors.newCachedThreadPool();
+//        for(int i = 0;i < 5; i++) {
+//            exec.execute(new SimplePriorities(Thread.MIN_PRIORITY));
+//        }
+//        exec.execute(new SimplePriorities(Thread.MAX_PRIORITY));
+//        exec.shutdown();
     }
 }

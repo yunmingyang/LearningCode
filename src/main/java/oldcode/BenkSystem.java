@@ -1,4 +1,4 @@
-package TestExc;
+package oldcode;
 
 public class BenkSystem {
     //属性：余额

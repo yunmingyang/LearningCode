@@ -1,4 +1,4 @@
-package Str;
+package oldcode;
 
 public class DelStr {
     public static String DelStr(String str,int pos){

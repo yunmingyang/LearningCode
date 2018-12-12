@@ -1,4 +1,4 @@
-package com.AbstractTest;
+package oldcode;
 
 abstract class Test1 {
     private double price;

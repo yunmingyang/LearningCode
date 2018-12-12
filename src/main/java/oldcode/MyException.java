@@ -1,4 +1,4 @@
-package TestExc;
+package oldcode;
 
 public class MyException extends Exception{
     private double mCount;

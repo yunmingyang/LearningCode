@@ -1,4 +1,4 @@
-package Str;
+package oldcode;
 
 public class FindStr {
     public static void main(String[] args){

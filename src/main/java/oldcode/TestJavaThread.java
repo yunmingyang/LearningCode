@@ -1,4 +1,4 @@
-package com.ThreadTest;
+package oldcode;
 
 public class TestJavaThread extends Thread {
     private int i = 0;

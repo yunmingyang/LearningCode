@@ -1,9 +1,8 @@
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.ObjectInputStream;
-import java.io.Serializable;
 
-public class ReadSerializable implements Serializable{
+public class ReadSerializable {
     public static void main(String[] args) throws Exception{
         ObjectInputStream in = new ObjectInputStream(
                 new FileInputStream(
@@ -12,7 +11,7 @@ public class ReadSerializable implements Serializable{
                                 "X.file"
                         )
                 ));
-        System.out.println(in.readObject().getClass());
+        Test o = (Test) in.readObject();
+        o.IsEmpty();
     }
 }
-

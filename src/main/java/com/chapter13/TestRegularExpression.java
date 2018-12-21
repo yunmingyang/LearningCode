@@ -17,6 +17,7 @@ public class TestRegularExpression {
         System.out.println("Input: \"" + args[0] + "\"");
         for (String arg: args) {
             System.out.println("Regular expression: \"" + arg + "\"");
+            //Pattern先接收一个String对象（正则式）产生一个pattern对象，然后使用该pattern对象可通过入参要匹配的字符串对象产生matcher对象
             Pattern pattern = Pattern.compile(arg);
             Matcher matcher = pattern.matcher(args[0]);
             while(matcher.find()){

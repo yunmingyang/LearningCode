@@ -1,3 +1,5 @@
+package oldcode;
+
 public class ClassInit {
 
     /**

@@ -29,15 +29,15 @@ public class Receipt {
     }
 
     public static void main(String[] args) {
-//        Receipt receipt = new Receipt();
-//        receipt.printTitle();
-//        receipt.print("Jack's Magic Beans",4,4.25);
-//        receipt.print("Princess Peas",3,5.1);
-//        receipt.print("Three Bears Porridge",1,14.29);
-//        receipt.printTotal(15);
+        Receipt receipt = new Receipt();
+        receipt.printTitle();
+        receipt.print("Jack's Magic Beans",4,4.25);
+        receipt.print("Princess Peas",3,5.1);
+        receipt.print("Three Bears Porridge",1,14.29);
+        receipt.printTotal(15);
 
-        System.out.println(Pattern.matches("^\\w*$"," "));
-        System.out.println(Pattern.matches("^\\w*$","ssss"));
+//        System.out.println(Pattern.matches("^\\w*$"," "));
+//        System.out.println(Pattern.matches("^\\w*$","ssss"));
 
     }
 }

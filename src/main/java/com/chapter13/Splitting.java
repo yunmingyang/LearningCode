@@ -15,8 +15,8 @@ public class Splitting {
     }
 
     public static void main(String[] args) {
-        split(" ");
-        split("\\W+");
-        split("n\\W+");
+        split(" ");//以空格为划分打印
+        split("\\W+");//非词作为划分打印
+        split("n\\W+");//以n和非词作为划分打印
     }
 }

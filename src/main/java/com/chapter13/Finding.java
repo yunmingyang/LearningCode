@@ -10,12 +10,12 @@ public class Finding {
     public static void main(String[] args) {//find(int i)设置搜索的起始位置
         Matcher m = Pattern.compile("\\w+").matcher("Evening is full of the linnet's wings");
         while(m.find()){
-            System.out.println(m.group() + "\n");
+            System.out.println(m.group());
         }
         System.out.println("\n");
         int i = 0;
-        while(m.find(i)){
-            System.out.println(m.group() + "\n");
+        while(m.find(i)){//起始点
+            System.out.println(m.group());
             i++;
         }
     }

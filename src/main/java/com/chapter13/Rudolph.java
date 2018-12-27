@@ -8,7 +8,7 @@ public class Rudolph {
         for(String pattern : new String[]{
                 "Rodulph",
                 "[rR]odulph",
-                "[rR][aeiou][a-z]ul.*",
+                "[rR][aeiou][a-z]ul.*",//. 代表任意字符
                 "R.*"
         })
             System.out.println("Rodulph".matches(pattern));

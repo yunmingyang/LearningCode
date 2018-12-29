@@ -9,8 +9,7 @@ public class Individual {
     private final int counter = id++;
     private static int id = 0;
     private String name  = null;
-    public Individual(){
-    }
+    public Individual(){}
     public Individual(String name){
         this.name = name;
     }

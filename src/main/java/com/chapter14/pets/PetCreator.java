@@ -10,6 +10,7 @@ import java.util.Random;
  */
 public abstract class PetCreator {
     private Random random = new Random(47);
+    //设计模式：模板模式
     public abstract List<Class<? extends Pet>> types();
     public Pet randomPet(){
         int n = random.nextInt(types().size());
@@ -18,6 +19,8 @@ public abstract class PetCreator {
         }catch (InstantiationException e){
             throw new RuntimeException(e);
         }catch (IllegalAccessException e){
+//            此异常使用于jdk1.7 或者更高
+//            当构造器私有时候，有可能会抛出此异常
             throw new RuntimeException(e);
         }
     }
@@ -28,6 +31,7 @@ public abstract class PetCreator {
         return  result;
     }
     public ArrayList<Pet> arrayList(int size){
+//        设置上线，因此不需要转型就可以未Pet类型
         ArrayList<Pet> result = new ArrayList<Pet>();
         Collections.addAll(result,createArray(size));
         return result;

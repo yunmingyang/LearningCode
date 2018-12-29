@@ -17,6 +17,7 @@ public class PetCount {
                 put(type,quantity + 1);
         }
     }
+//    传入一个creator对象，并调用count方法，foreach put到map中，最后打印时候会自动调用map的toString方法
     public static void countPets(PetCreator creator){
         PetCounter counter = new PetCounter();
         for (Pet pet:creator.createArray(20)) {

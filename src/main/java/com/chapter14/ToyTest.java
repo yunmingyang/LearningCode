@@ -26,20 +26,20 @@ public class ToyTest {
     public static void main(String[] args) {
         Class c = null;
         try {
-            c = Class.forName("com.chapter14.Fancy");
+            c = Class.forName("com.chapter14.Fancy");//此处必须使用全限定的包名
         }catch (ClassNotFoundException e){
             System.out.println("Can't find FancyToy");
             System.exit(1);
         }
         printInfo(c);
-        for (Class face: c.getInterfaces()) {
+        for (Class face: c.getInterfaces()) {//getInterface返回Class对象，表示包含的接口
             printInfo(face);
         }
-        Class up = c.getSuperclass();
+        Class up = c.getSuperclass();//获取Fancy的超类Toy
         Object obj = null;
         Toy toy = null;
         try{
-            obj = up.newInstance();//虚拟构造器，使用此方法必须带有默认的构造器
+            obj = up.newInstance();//虚拟构造器，使用此方法必须带有默认的构造器，得到的是一个Object的引用
             toy = (Toy)up.newInstance();//向下转型
         }catch (InstantiationException e){
             System.out.println("Cannot instantiate");

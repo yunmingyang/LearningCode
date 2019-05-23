@@ -1,23 +1,4 @@
-# Python
-
-## Chapter2
-1. '>>>' 代表等待输入下一命令行
-   '...' 代表等待输入当前命令的其余部分
-2. python中未指定返回值的函数会自动返回None，等价于NULL
-3. print()和c的printf()很相思同样可以使用%s,%d等字符串格式操作符结合使用，实现字符串替换的功能，但是需要一个%来间隔。
-4. int()可将字符串转换为int
-5. python单行注释'#'，多行注释'""" """"'/"''' '''"
-6. 文档字符串，在模块、类或者函数的起始添加一个字符串，起到在线文档的功能
-7. / 浮点除， // 地板除法
-8. python开头支持_、大写字母和小写字母。变量整体大小写敏感。
-9. python 不支持++ -- 操作符，但是支持+=、-=等增量操作符
-10. python数字类型包括: 有符号整形（长整型、布尔值、浮点数以及复数），且长整形和C语言中的长整形不同，类似于JAVA中的Bigntrger类型。
-true会被当作1，false会被当作0。且decimal类型可以用于精确表示浮点型，但是应不属于基本类型，因为需要导入deciaml包。
-11. 字符串[]、[:]可以用于访问，且0表示首字符，-1表示末尾字符
-12. list和tuple和数组类似，但是可以保存不同类型的对象，也是通过索引从0开始访问。list可改变，tuple不可改变。同时可以通过[][：](切片运算)得到子集。切片运算之前是什么类型，切片之后也就是什么类型
-13. 字典和map类似，但是其键值需要为不可变类型且不能为null
-
-
+# Basic
 ## 环境变量
 1. PYTHONPATH: PYTHONPATH是Python搜索路径，默认我们import的模块都会从PYTHONPATH里面寻找。
 2. Python启动后，先寻找PYTHONSTARTUP环境变量，然后执行此变量指定的文件中的代码。
@@ -33,13 +14,16 @@ true会被当作1，false会被当作0。且decimal类型可以用于精确表�
 2. 标识符的其他的部分由字母、数字和下划线组成。
 3. 标识符对大小写敏感。
 ***
+
 ## 多行语句
 1. 一行写不完可以使用'\'来进行连接，类似于shell
 2. 在[],{}或者()中不需要使用'\'
 ***
+
 ## 数字类型
 1. 四种类型:int,float,bool,complex
 ***
+
 ## 字符串
 1. 单引号和双引号完全相同
 2. 使用三引号(单双均可)可以指定一个多行字符串。
@@ -55,18 +39,15 @@ true会被当作1，false会被当作0。且decimal类型可以用于精确表�
 ## 空行
 1. 空行虽然不是python语法的一部分，但是可以用作区分的作用
 ***
+
 ## 等待输入
 1. input("")
 ***
+
 ## 同行显示多条语句
 1. 可同行现实多条语句，但是需要用";"来分割
 ***
-## import以及from...import
-在 python 用 import 或者 from...import 来导入相应的模块。
-将整个模块(somemodule)导入，格式为： import somemodule。
-从某个模块中导入某个函数,格式为： from somemodule import somefunction
-从某个模块中导入多个函数,格式为： from somemodule import firstfunc, secondfunc, thirdfunc。
-将某个模块中的全部函数导入，格式为： from somemodule import *。
+
 ## python允许同时为多个变量赋值
 `
 a=b=c=1
@@ -76,11 +57,13 @@ a=b=c=1
 a,b,c=1,2,'runoob'
 `
 ***
+
 ## 标准数据类型
 1.number,string,list,tuple,dictonary,set
 2.可变: list,set,dictonart
 3.不可变: number,string,tuple
 ***
+
 ## number
 1. int,float,bool,complex
 2. 删除一个对象可以使用del
@@ -89,24 +72,64 @@ a,b,c=1,2,'runoob'
 5. 数值的除法包含两个运算符：/ 返回一个浮点数，// 正常返回一个整数，但是若分子或者分母中有一个是浮点数，那么返回的就是浮点数。
 6. 一个变量可以通过赋值指向不同类型的对象。
 ***
+
 ## 位运算符
 &，|，～，^
 ***
+
 ## 逻辑运算符
 and，or，not
 ***
+
 ## 身份运算符
 is，not is。主要比较是否引用相同对象。
 ***
+
 ## 成员运算符
 in，not in
 ***
+
+## import以及from...import
+在 python 用 import 或者 from...import 来导入相应的模块。
+将整个模块(somemodule)导入，格式为： import somemodule。
+从某个模块中导入某个函数,格式为： from somemodule import somefunction
+从某个模块中导入多个函数,格式为： from somemodule import firstfunc, secondfunc, thirdfunc。
+将某个模块中的全部函数导入，格式为： from somemodule import *。
+***
+
+## 包
+1. 目录只有包含一个叫做__init__.py的文件才会被认作是一个包
+2. __all__,为了确保一些大小写不区分的系统，如windows，import *时候出现问题，所以可以在这个变量中，由作者填入包名，来进行导入
+***
+
 ## tips
 1. *args和**kwargs，前者是一个tuple，后者是一个字典
 2. python中只有模块、类以及函数才会引入新的作用域，其它代码块不会引入新作用域
 3. 内部作用域想要修改外部作用域变量时候，要使用global关键字
 4. 修改嵌套作用域的变量就要使用nonlocal关键字
-***
-## 包
-1. 目录只有包含一个叫做__init__.py的文件才会被认作是一个包
-2. __all__,为了确保一些大小写不区分的系统，如windows，import *时候出现问题，所以可以在这个变量中，由作者填入包名，来进行导入
+
+# 流畅的python
+## Chapter2
+1. 容器序列: list,tuple,collections.deque
+   扁平序列: str,bytes,bytearray,memoryview,array.array
+2. 可变序列: list,bytearray,collections.deque,memoryview,array.array
+   不可变序列: tuple,str和bytes
+3. python中(),[],{}会省略其中的换行，因此若过长可以省略换行符
+4. 生成器表达式和列表推导式语法上的区别是把[]换成()
+5. python切片和区间操作会忽略最后一个元素
+6. '>>>' 代表等待输入下一命令行
+   '...' 代表等待输入当前命令的其余部分
+7. python中未指定返回值的函数会自动返回None，等价于NULL
+8. print()和c的printf()很相思同样可以使用%s,%d等字符串格式操作符结合使用，实现字符串替换的功能，但是需要一个%来间隔。
+9. int()可将字符串转换为int
+10. python单行注释'#'，多行注释'""" """"'/"''' '''"
+11. 文档字符串，在模块、类或者函数的起始添加一个字符串，起到在线文档的功能
+12. / 浮点除， // 地板除法
+13. python开头支持_、大写字母和小写字母。变量整体大小写敏感。
+14. python 不支持++ -- 操作符，但是支持+=、-=等增量操作符
+15. python数字类型包括: 有符号整形（长整型、布尔值、浮点数以及复数），且长整形和C语言中的长整形不同，类似于JAVA中的Bigntrger类型。
+true会被当作1，false会被当作0。且decimal类型可以用于精确表示浮点型，但是应不属于基本类型，因为需要导入deciaml包。
+16. 字符串[]、[:]可以用于访问，且0表示首字符，-1表示末尾字符
+17. list和tuple和数组类似，但是可以保存不同类型的对象，也是通过索引从0开始访问。list可改变，tuple不可改变。同时可以通过[][：](切片运算)得到子集。切片运算之前是什么类型，切片之后也就是什么类型
+18. 字典和map类似，但是其键值需要为不可变类型且不能为null
+

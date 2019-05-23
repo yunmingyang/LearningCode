@@ -6,7 +6,6 @@ public class TestCopy {
         node.setVal(1);
         System.out.println(node.getVal());
 
-
         Node copy1 = node;
         System.out.println(copy1.getVal());
 

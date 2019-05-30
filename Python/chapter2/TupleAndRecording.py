@@ -1,12 +1,10 @@
-# # 元组拆包
+# # 元组用于记录
 # lax_cooidinates = (33.9425, -118.408056)
 # # 元组拆包
 # city, year, pop, chg, area = ('Tokyo', 2003, 32450, 0.66, 8014)
+# # 元组列表
 # traveler_ids = [('USA', '31195855'), ('BRA', 'CE342567'), ('ESP', 'XDA205856')]
-
 # for passport in sorted(traveler_ids):
-#     # 元组拆包
-#     # %s可以匹配到元祖中元素
 #     print('%s/%s' % passport)
 
 # 嵌套元组拆包

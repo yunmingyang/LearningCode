@@ -51,5 +51,5 @@
 # print(a)
 
 str = "No VM is running or defined on this host"
-
-print(str.split())  # 默认用空格作分割
+# 默认用空格作分割
+print(str.split())

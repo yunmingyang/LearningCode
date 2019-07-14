@@ -15,12 +15,12 @@ public class FormatArray {
 
         for (int i :
              arr3) {
-            System.out.println("arr3[" + i +"] is" + i);
+            System.out.println("arr3: " + i);
         }
 
         for (int i :
                 arr4) {
-            System.out.println("arr4[" + i +"] is" + i);
+            System.out.println("arr4: " + i);
         }
 
     }

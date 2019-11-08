@@ -10,7 +10,7 @@ print(a)
 print(a.shape)
 print(a[2])
 print(a[2, 1])
-#第一列
+# 第一列
 print(a[:, 1])
 # 转置
 print(a.transpose())

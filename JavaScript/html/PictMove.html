@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <div id="a" style="position: absolute;left: 0px;"></div>
+    <div id="b" style="position: absolute;left: 210px;background-color: black;"></div>
+    <div id="c" style="position: absolute;left: 420px;background-color: blue;"></div>
+    <script>
+        function move(){
+            var el_div1 = document.getElementById('a');
+            var el_div2 = document.getElementById('b');
+            var el_div3 = document.getElementById('c');
+            var p_left1 = parseInt(el_div1.style.left);
+            var p_left2 = parseInt(el_div2.style.left);
+            var p_left3 = parseInt(el_div3.style.left);
+            function m(l){
+                if(l >= 620){
+                    return 0;
+                }
+                return l += 10;
+            }
+            el_div1.style.left = m(p_left1) + "px";
+            el_div2.style.left = m(p_left2) + "px";
+            el_div3.style.left = m(p_left3) + "px";
+        }
+        // 间隔100ms循环调用
+        setInterval('move()', 100)
+    </script>
+</body>
+</html>

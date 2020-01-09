@@ -7,7 +7,7 @@ def reverse(word):
 fact = factorial
 fruits = ['strawberry', 'fig', 'apple', 'cherry', 'raspberry', 'banana']
 
-if __name__ == '__main':
+if __name__ == '__main__':
     print(factorial(42))
     print(factorial.__doc__)
     print(type(factorial))

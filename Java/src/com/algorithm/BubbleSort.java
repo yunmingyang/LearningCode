@@ -1,7 +1,7 @@
 package algorithm;
 
 public class BubbleSort {
-    public static void BubbleSort(int[] arr){
+    public static void sort(int[] arr){
         for(int i = 0;i < arr.length;i++){
             for(int j = 1;j < arr.length;j++){
                 if(arr[j-1] > arr[j]){
@@ -14,7 +14,7 @@ public class BubbleSort {
     }
 
 
-    public static void BubbleSort(int[] arr,boolean flag){//优化一下，flag为区别原方法
+    public static void sort(int[] arr,boolean flag){//优化一下，flag为区别原方法
         flag = true;
         while(flag){
             flag =false;
@@ -33,7 +33,7 @@ public class BubbleSort {
 
     public static void main(String[] args){
         int arr[] = {12,23,4,5,6,1,1,23,4,4,2,2,3,23};
-        BubbleSort(arr,false);
+        sort(arr, false);
         for (int i = 0;i < arr.length;i++)
             System.out.println(arr[i]);
     }

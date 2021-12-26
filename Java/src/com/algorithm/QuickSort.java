@@ -25,14 +25,14 @@ public class QuickSort {
         int end = high;
         int key = arr[start];
         while(start < end){
-            while(start < end && key < arr[end])
+            while(start < end && key <= arr[end])
                 end--;
             swap(arr,start,end);
-            while(start < end && key > arr[start])
+            while(start < end && key >= arr[start])
                 start++;
             swap(arr,start,end);
         }
-        if(start>low)QuickSort(arr,0,start-1);
-        if(end<high)QuickSort(arr,end+1,arr.length-1);
+        if(start>low)QuickSort(arr,0,start - 1);
+        if(end<high)QuickSort(arr,end + 1,arr.length - 1);
     }
 }

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>hello_react</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!-- prepare container -->
+        <div id="test"></div>
+
+        <!-- import core react library -->
+        <script type="text/javascript" src="../base/new/react.development.js"></script>
+        <!-- import react-dom library for supporting DOM operation -->
+        <script type="text/javascript" src="../base/new/react-dom.development.js"></script>
+        <!-- import babel for convert from jsx to js-->
+        <script type="text/javascript" src="../base/new/babel.min.js"></script>
+
+        <!-- code -->
+        <script type="text/babel"> // must be babel
+            //1 create virtual DOM
+            const VDOM = <h1>Hello, React</h1> // 一定不写引号，因为不是字符串
+            //2 rendor virtual DOM to the page
+            ReactDOM.render(VDOM, document.getElementById("test"))
+        </script>
+    </body>
+</html>
